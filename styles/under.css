@@ -1,7 +1,241 @@
-.scrolling-section {
+.scrolling-bar-container {
+  position: fixed;
+  display: flex;
+  align-items: safe center;
+  justify-content: safe center;
+  flex-direction: row;
+  width: 100%;
+  height: 56px;
+  z-index: 50;
+  background-color: white;
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.left-scroll,
+.right-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+}
+
+.left-container, 
+.right-container {
+  position: fixed;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  user-select: none;
+  z-index: 2;
+  width: 106px;
+  height: 56px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.left-scroll-button,
+.right-scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0px solid white;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: background-color 1s;
+}
+
+.left-scroll-button .tooltip,
+.right-scroll-button .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 10px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -40px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.left-scroll-button:hover .tooltip,
+.right-scroll-button:hover .tooltip {
+  opacity: 0.9;
+}
+
+.left-scroll-button .tooltip {
+  margin-left: 26px;
+}
+
+.right-scroll-button .tooltip {
+  margin-right: 2px;
+}
+
+.left-container {
+  left: 72px;
+  justify-content: flex-start;
+  background: linear-gradient(to right, rgb(255, 255, 255, 1),rgb(255, 255, 255, 1),transparent);
+}
+
+.right-container {
+  right: 0px;
+  justify-content: flex-end;
+  background: linear-gradient(to left, rgb(255, 255, 255, 1),rgb(255, 255, 255, 1), transparent);
+}
+
+.left-scroll-button:hover, 
+.right-scroll-button:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+  z-index: 160;
+  transition: background-color 0.3s;
+}
+
+.left-scroll-button:active, 
+.right-scroll-button:active {
+  background-color: rgba(128, 128, 128, 0.3);
+  z-index: 150;
+}
+
+.left-scroll-button::after, .right-scroll-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(128, 128, 128, 0.1); /* Border color on release */
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes borderFade {
+  0% { opacity: 1; }
+  25% { opacity: 0.75; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.25; }
+  100% { opacity: 0; }
+}
+
+/* Apply animation on release with 'released' class */
+.left-scroll-button.released::after, .right-scroll-button.released::after {
+  animation: borderFade 0.5s ease; /* Adjust duration as needed */
+}
+
+.lt, .gt {
+  width: 20px;
+}
+
+.scrolling-bar {
+  height: 56px;
+  margin-left: 0px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: safe center;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; 
+  flex-wrap: nowrap;
+  width: 100wh;
+  flex-grow: 1;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  margin-right: 116px;
+}
+
+/*.scrolling-bar:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to left,transparent, white);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}*/
+
+/*.scrolling-bar {
+  font-family: Roboto, Arial;
+  font-size: 15px;
   position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  height: 56px;
+  z-index: 200;
+  top: 56px;
+  width: 100%;
+  overflow-y: hidden;
+  background-color: rgba(248, 248, 248, 1);
+  scrollbar-width: none;
+}*/
+
+.item {
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: safe center;
+  padding: 0 12px;
+  height: 32px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.1);
+  color: black;
+  white-space: nowrap;
+  margin: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition:  0.15s ease-in-out;
+}
+
+.first {
+  background-color: black;
+  color: white;
+}
+
+.item.active {
+  background-color: black;
+  color: white;
+  transition: 0s;
+}
+
+.item.active:hover {
+  background-color: black;
+  color: white;
+}
+
+.item:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.item:last-child {
+  margin-right: auto;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s, visibility 0.1s;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.1s, visibility 0.1s;
 }
