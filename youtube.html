@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube.com Clone</title>
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Custom stylesheets -->
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/video.css">
@@ -16,344 +18,345 @@
   <link rel="stylesheet" href="styles/under.css">
 </head>
 <body>
-
-  <div class="header">
-    <div class="left-section-containor">
-      <div class="left-section">
-        <button id = "hamburger-button" class="hamburger-button">
-          <div class="hamburger-icon">
-            <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-              <path d = "M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
-            </svg>
-          </div>
-        </button>
-        <div class="youtube-logo-containor">
-          <img class="youtube-logo" src="icons/youtube-logo.svg">
-          <span>DE</span>
-        </div>
-      </div>
-    </div>
-    <div class="middle-section">
-      <div class="search-containor">
-        <div class="search-bar-containor">
-          <div class="search-bar-icon-hidden">
-            <div class="search-bar-icon-inside">
-              <svg class="svg-icons" xmlns="https://www.w3.org/2000/svg" fill="currentColor" height = "20" viewBox = "0 0 24 24" width = "20" focusable="false" aria-hidden = "true">
-                <path clip-rule = "evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" fill-rule = "evenodd"></path>
+  <header>
+    <div class="header">
+      <div class="left-section-container">
+        <div class="left-section">
+          <button id = "hamburger-button" class="hamburger-button">
+            <div class="hamburger-icon">
+              <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                <path d = "M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
               </svg>
             </div>
-          </div> 
-          <input class="search-bar" type="text" placeholder="Search">
-        </div>
-        <button class="search-button">
-          <div class="search-button-icon">
-            <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-              <path clip-rule = "evenodd" d = "M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" rule = "evenodd"></path>
-            </svg>
+          </button>
+          <div class="youtube-logo-container">
+            <img class="youtube-logo" src="icons/youtube-logo.svg">
+            <span>DE</span>
           </div>
-          <div class="tooltip">Search</div>
-        </button>
+        </div>
       </div>
-      <div class="video-searh-button-containor">
-        <button id="voice-search-button">
-          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
-          <div class="tooltip">Search with your voice</div>
-        </button>
-      </div>
-      <!--Hidden buttons-->
-      <div class="hidden-buttons">
-        <div class="hidden-search-button-containor">
-          <button class="hidden-search-button">
-            <img class="search-icon" src="icons/search.svg">
+      <div class="middle-section">
+        <div class="search-container">
+          <div class="search-bar-container">
+            <div class="search-bar-icon-hidden">
+              <div class="search-bar-icon-inside">
+                <svg class="svg-icons" xmlns="https://www.w3.org/2000/svg" fill="currentColor" height = "20" viewBox = "0 0 24 24" width = "20" focusable="false" aria-hidden = "true">
+                  <path clip-rule = "evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" fill-rule = "evenodd"></path>
+                </svg>
+              </div>
+            </div> 
+            <input class="search-bar" type="text" placeholder="Search">
+          </div>
+          <button class="search-button">
+            <div class="search-button-icon">
+              <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                <path clip-rule = "evenodd" d = "M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" rule = "evenodd"></path>
+              </svg>
+            </div>
             <div class="tooltip">Search</div>
           </button>
         </div>
-        <div class="hidden-voice-button-containor">
-          <button class="hidden-voice-button">
+        <div class="video-searh-button-container">
+          <button id="voice-search-button">
             <img class="voice-search-icon" src="icons/voice-search-icon.svg">
             <div class="tooltip">Search with your voice</div>
           </button>
         </div>
+        <!--Hidden buttons-->
+        <div class="hidden-buttons">
+          <div class="hidden-search-button-container">
+            <button class="hidden-search-button">
+              <img class="search-icon" src="icons/search.svg">
+              <div class="tooltip">Search</div>
+            </button>
+          </div>
+          <div class="hidden-voice-button-container">
+            <button class="hidden-voice-button">
+              <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+              <div class="tooltip">Search with your voice</div>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Right side: Icons and profile -->
-    <div class="right-section">
-      <div class="buttons">
-        <div class="video-button">
-          <button id="videoUploadBtn">
-            <div class="upload-icons vid">
-              <svg class="svg-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox = "0 0 24px 24px" width="24px" focusable="false" aria-hidden="true">
-                <path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path>
-              </svg>
-            </div>
-          </button>
-          <div class="tooltip">Create</div>
-          <div id="dropdownMenu" class="dropdown-content">
-            <a href="#">
-              <div class="upload-icons">
-                <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                  <path d = "m10 8 6 4 -6 4 V8z m11 -5 v18 H3 V3h18z m-1 1 H4 v16 h16 V4z"></path>
+      <!-- Right side: Icons and profile -->
+      <div class="right-section">
+        <div class="buttons">
+          <div class="video-button">
+            <button id="videoUploadBtn">
+              <div class="upload-icons vid">
+                <svg class="svg-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox = "0 0 24px 24px" width="24px" focusable="false" aria-hidden="true">
+                  <path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path>
                 </svg>
               </div>
-              Upload video
-            </a>
-            <a href="#">
-              <div class="upload-icons">
-                <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                  <g><path d = "M14 12c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zM8.48 8.45l-.71-.7C6.68 8.83 6 10.34 6 12s.68 3.17 1.77 4.25l.71-.71C7.57 14.64 7 13.39 7 12s.57-2.64 1.48-3.55zm7.75-.7-.71.71c.91.9 1.48 2.15 1.48 3.54s-.57 2.64-1.48 3.55l.71.71C17.32 15.17 18 13.66 18 12s-.68-3.17-1.77-4.25zM5.65 5.63l-.7-.71C3.13 6.73 2 9.24 2 12s1.13 5.27 2.95 7.08l.71-.71C4.02 16.74 3 14.49 3 12s1.02-4.74 2.65-6.37zm13.4-.71-.71.71C19.98 7.26 21 9.51 21 12s-1.02 4.74-2.65 6.37l.71.71C20.87 17.27 22 14.76 22 12s-1.13-5.27-2.95-7.08z"></path></g>
-                </svg>
-              </div>Go live
-            </a>
-            <a href="#">
-              <div class="upload-icons">
-                <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                  <path d = "M15.01,7.34l1.64,1.64L8.64,17H6.99v-1.64L15.01,7.34 M15.01,5.92l-9.02,9.02V18h3.06l9.02-9.02L15.01,5.92L15.01,5.92z M17.91,4.43l1.67,1.67l-0.67,0.67L17.24,5.1L17.91,4.43 M17.91,3.02L15.83,5.1l3.09,3.09L21,6.11L17.91,3.02L17.91,3.02z M21,10h-1 v10H4V4h10V3H3v18h18V10z"></path>
-                </svg>
-              </div>
-              Create post
-            </a>
-         </div>
-        </div> 
-        <div class="notification-icon-container">
-          <button id="notification-button">
-            <div class="upload-icons notif">
-              <svg class="svg-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox = "0 0 24px 24px" width="24px" focusable="false" aria-hidden="true">
-                <path clip-rule="evenodd" d="m13.497 4.898.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z" fill-rule="evenodd"></path>
-              </svg>
-            </div>
-          </button>
-          <div class="tooltip">Notifications</div>
-          
-          <div class="dropdown-notification-content">
-            <div id="dropdown-notification-content1">
-              <div class="dropdown-notification-header">
-                <h2>Notifications</h2>
-                <button class="notifications-settings">
-                  <img class="settings-notifications-icon" src="icons/settings.svg">
-                </button>
-              </div>
-              <div class="dropdown-notification-main">
-                <div class="dropdown-notification-icon">
-                  <img src="icons/notifications.svg">
+            </button>
+            <div class="tooltip">Create</div>
+            <div id="dropdownMenu" class="dropdown-content">
+              <a href="#">
+                <div class="upload-icons">
+                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                    <path d = "m10 8 6 4 -6 4 V8z m11 -5 v18 H3 V3h18z m-1 1 H4 v16 h16 V4z"></path>
+                  </svg>
                 </div>
-                <div class="dropdown-notification-text">
-                  <div class="dropdown-notification-text1">
-                    Your notifications live here
+                Upload video
+              </a>
+              <a href="#">
+                <div class="upload-icons">
+                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                    <g><path d = "M14 12c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zM8.48 8.45l-.71-.7C6.68 8.83 6 10.34 6 12s.68 3.17 1.77 4.25l.71-.71C7.57 14.64 7 13.39 7 12s.57-2.64 1.48-3.55zm7.75-.7-.71.71c.91.9 1.48 2.15 1.48 3.54s-.57 2.64-1.48 3.55l.71.71C17.32 15.17 18 13.66 18 12s-.68-3.17-1.77-4.25zM5.65 5.63l-.7-.71C3.13 6.73 2 9.24 2 12s1.13 5.27 2.95 7.08l.71-.71C4.02 16.74 3 14.49 3 12s1.02-4.74 2.65-6.37zm13.4-.71-.71.71C19.98 7.26 21 9.51 21 12s-1.02 4.74-2.65 6.37l.71.71C20.87 17.27 22 14.76 22 12s-1.13-5.27-2.95-7.08z"></path></g>
+                  </svg>
+                </div>Go live
+              </a>
+              <a href="#">
+                <div class="upload-icons">
+                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                    <path d = "M15.01,7.34l1.64,1.64L8.64,17H6.99v-1.64L15.01,7.34 M15.01,5.92l-9.02,9.02V18h3.06l9.02-9.02L15.01,5.92L15.01,5.92z M17.91,4.43l1.67,1.67l-0.67,0.67L17.24,5.1L17.91,4.43 M17.91,3.02L15.83,5.1l3.09,3.09L21,6.11L17.91,3.02L17.91,3.02z M21,10h-1 v10H4V4h10V3H3v18h18V10z"></path>
+                  </svg>
+                </div>
+                Create post
+              </a>
+          </div>
+          </div> 
+          <div class="notification-icon-container">
+            <button id="notification-button">
+              <div class="upload-icons notif">
+                <svg class="svg-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox = "0 0 24px 24px" width="24px" focusable="false" aria-hidden="true">
+                  <path clip-rule="evenodd" d="m13.497 4.898.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z" fill-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div class="tooltip">Notifications</div>
+            
+            <div class="dropdown-notification-content">
+              <div id="dropdown-notification-content1">
+                <div class="dropdown-notification-header">
+                  <h2>Notifications</h2>
+                  <button class="notifications-settings">
+                    <img class="settings-notifications-icon" src="icons/settings.svg">
+                  </button>
+                </div>
+                <div class="dropdown-notification-main">
+                  <div class="dropdown-notification-icon">
+                    <img src="icons/notifications.svg">
                   </div>
-                  Subscribe to your favourite channels to receive notifications about their latest videos.
+                  <div class="dropdown-notification-text">
+                    <div class="dropdown-notification-text1">
+                      Your notifications live here
+                    </div>
+                    Subscribe to your favourite channels to receive notifications about their latest videos.
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-        </div>
-        <button class="user-picture-container" id="user-picture-container">
-          <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
-        </button>
-
-        <div class="user-dropdown-main-container">
-          <div class="user-dropdown-header">
-            <div class="user-dropdown-picture">
-              <img class="user-picture" src="channel-pictures/my-channel.jpeg">
-            </div>
-            <div class="user-header-info">
-              <div>
-                Nurbakyt Amanbek
-              </div>
-              <div>
-                @nurbakytamanbek8120
-              </div>
-              <a class="view-channel">View your channel</a>
-              
-            </div>
           </div>
-          <div class="user-dropdown-container">
-            <div class="user-account">
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 24px 24px" focusable = "false" aria-hidden="true">
-                    <path d = "M12 13.9v-3.72h9.36c.14.63.25 1.22.25 2.05 0 5.71-3.83 9.77-9.6 9.77C6.48 22 2 17.52 2 12S6.48 2 12 2c2.7 0 4.96.99 6.69 2.61l-2.84 2.76c-.72-.68-1.97-1.49-3.85-1.49-3.31 0-6.01 2.75-6.01 6.12s2.7 6.12 6.01 6.12c3.83 0 5.24-2.65 5.5-4.22H12z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Google Account
-                </div>
+          <button class="user-picture-container" id="user-picture-container">
+            <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
+          </button>
+
+          <div class="user-dropdown-main-container">
+            <div class="user-dropdown-header">
+              <div class="user-dropdown-picture">
+                <img class="user-picture" src="channel-pictures/my-channel.jpeg">
               </div>
-              <div class="user-account-menu right-gt">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M4 20h14v1H3V6h1v14zM6 3v15h15V3H6zm2.02 14c.36-2.13 1.93-4.1 5.48-4.1s5.12 1.97 5.48 4.1H8.02zM11 8.5a2.5 2.5 0 015 0 2.5 2.5 0 01-5 0zm3.21 3.43A3.507 3.507 0 0017 8.5C17 6.57 15.43 5 13.5 5S10 6.57 10 8.5c0 1.69 1.2 3.1 2.79 3.43-3.48.26-5.4 2.42-5.78 5.07H7V4h13v13h-.01c-.38-2.65-2.31-4.81-5.78-5.07z"></path>
-                  </svg>
+              <div class="user-header-info">
+                <div>
+                  Nurbakyt Amanbek
                 </div>
-                <div class="user-dropdown-text">
-                  Switch account
+                <div>
+                  @nurbakytamanbek8120
                 </div>
-                <div class="spacer"></div>
-                <div class="user-dropdown-icon right-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M20 3v18H8v-1h11V4H8V3h12zm-8.9 12.1.7.7 4.4-4.4L11.8 7l-.7.7 3.1 3.1H3v1h11.3l-3.2 3.3z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Sign out
-                </div>
-              </div>
-            </div>
-            <div class="user-account">
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M10 9.35 15 12l-5 2.65ZM12 3a.73.73 0 00-.31.06L4.3 7.28a.79.79 0 00-.3.52v8.4a.79.79 0 00.3.52l7.39 4.22a.83.83 0 00.62 0l7.39-4.22a.79.79 0 00.3-.52V7.8a.79.79 0 00-.3-.52l-7.39-4.22A.73.73 0 0012 3m0-1a1.6 1.6 0 01.8.19l7.4 4.22A1.77 1.77 0 0121 7.8v8.4a1.77 1.77 0 01-.8 1.39l-7.4 4.22a1.78 1.78 0 01-1.6 0l-7.4-4.22A1.77 1.77 0 013 16.2V7.8a1.77 1.77 0 01.8-1.39l7.4-4.22A1.6 1.6 0 0112 2Zm0 4a.42.42 0 00-.17 0l-4.7 2.8a.59.59 0 00-.13.39v5.61a.65.65 0 00.13.37l4.7 2.8A.42.42 0 0012 18a.34.34 0 00.17 0l4.7-2.81a.56.56 0 00.13-.39V9.19a.62.62 0 00-.13-.37L12.17 6A.34.34 0 0012 6m0-1a1.44 1.44 0 01.69.17L17.39 8A1.46 1.46 0 0118 9.19v5.61a1.46 1.46 0 01-.61 1.2l-4.7 2.81A1.44 1.44 0 0112 19a1.4 1.4 0 01-.68-.17L6.62 16A1.47 1.47 0 016 14.8V9.19A1.47 1.47 0 016.62 8l4.7-2.8A1.4 1.4 0 0112 5Z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  YouTube Studio
-                </div>
-              </div>
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M12 3c4.96 0 9 4.04 9 9s-4.04 9-9 9-9-4.04-9-9 4.04-9 9-9m0-1C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4 7V7h-3V5h-2v2h-1c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h4v2H8v2h3v2h2v-2h1c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2h-4V9h6z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Purchase and memberships
-                </div>
-              </div>
-            </div>
-            <div class="user-account">
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "m12 3.06 7 3.21v4.84c0 1.3-.25 2.6-.75 3.86-.15.37-.33.76-.55 1.17-.15.27-.31.54-.48.81-1.32 2.01-3.17 3.42-5.23 3.98-2.06-.56-3.91-1.97-5.23-3.98-.17-.27-.33-.54-.48-.81-.22-.41-.4-.79-.55-1.17-.48-1.26-.73-2.56-.73-3.86V6.27l7-3.21m0-1.1L4 5.63v5.49c0 1.47.3 2.9.81 4.22.17.44.37.86.6 1.28.16.3.34.6.52.88 1.42 2.17 3.52 3.82 5.95 4.44l.12.02.12-.03c2.43-.61 4.53-2.26 5.95-4.43.19-.29.36-.58.52-.88.22-.41.43-.84.6-1.28.51-1.33.81-2.76.81-4.23V5.63l-8-3.67zm1.08 10.15c-.32-.06-.64-.11-.96-.12A2.997 2.997 0 0012 6a2.996 2.996 0 00-.12 5.99c-.32.01-.64.06-.96.12C8.64 12.58 7 14.62 7 17h10c0-2.38-1.64-4.42-3.92-4.89zM10 9c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm1.12 4.09c.37-.08.64-.11.88-.11s.51.03.88.11c1.48.3 2.63 1.46 3 2.91H8.12c.37-1.45 1.52-2.61 3-2.91z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Your data in YouTube
-                </div>
-              </div>
-              <div class="user-account-menu right-gt">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M12 22C10.93 22 9.86998 21.83 8.83998 21.48L7.41998 21.01L8.83998 20.54C12.53 19.31 15 15.88 15 12C15 8.12 12.53 4.69 8.83998 3.47L7.41998 2.99L8.83998 2.52C9.86998 2.17 10.93 2 12 2C17.51 2 22 6.49 22 12C22 17.51 17.51 22 12 22ZM10.58 20.89C11.05 20.96 11.53 21 12 21C16.96 21 21 16.96 21 12C21 7.04 16.96 3 12 3C11.53 3 11.05 3.04 10.58 3.11C13.88 4.81 16 8.21 16 12C16 15.79 13.88 19.19 10.58 20.89Z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Appearance: Light
-                </div>
+                <a class="view-channel">View your channel</a>
                 
-                <div class="spacer"></div>
-                <div class="user-dropdown-icon right-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
-                  </svg>
-                </div> 
-      
-              </div>
-              <div class="user-account-menu right-gt">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M13.33 6c-1 2.42-2.22 4.65-3.57 6.52l2.98 2.94-.7.71-2.88-2.84c-.53.67-1.06 1.28-1.61 1.83l-3.19 3.19-.71-.71 3.19-3.19c.55-.55 1.08-1.16 1.6-1.83l-.16-.15c-1.11-1.09-1.97-2.44-2.49-3.9l.94-.34c.47 1.32 1.25 2.54 2.25 3.53l.05.05c1.2-1.68 2.29-3.66 3.2-5.81H2V5h6V3h1v2h7v1h-2.67zM22 21h-1l-1.49-4h-5.02L13 21h-1l4-11h2l4 11zm-2.86-5-1.86-5h-.56l-1.86 5h4.28z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Language: British English
-                </div>
-      
-                <div class="spacer"></div>
-                <div class="user-dropdown-icon right-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
-                  </svg>
-                </div> 
-      
-              </div>
-              <div class="user-account-menu right-gt">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M12 20.95Q8.975 20.075 6.987 17.312Q5 14.55 5 11.1V5.7L12 3.075L19 5.7V11.35Q18.775 11.275 18.5 11.2Q18.225 11.125 18 11.075V6.375L12 4.15L6 6.375V11.1Q6 12.575 6.438 13.938Q6.875 15.3 7.625 16.438Q8.375 17.575 9.413 18.425Q10.45 19.275 11.625 19.725L11.675 19.7Q11.8 20 11.975 20.288Q12.15 20.575 12.375 20.825Q12.275 20.85 12.188 20.888Q12.1 20.925 12 20.95ZM17 17Q17.625 17 18.062 16.562Q18.5 16.125 18.5 15.5Q18.5 14.875 18.062 14.438Q17.625 14 17 14Q16.375 14 15.938 14.438Q15.5 14.875 15.5 15.5Q15.5 16.125 15.938 16.562Q16.375 17 17 17ZM17 20Q17.8 20 18.438 19.65Q19.075 19.3 19.5 18.7Q18.925 18.35 18.3 18.175Q17.675 18 17 18Q16.325 18 15.7 18.175Q15.075 18.35 14.5 18.7Q14.925 19.3 15.562 19.65Q16.2 20 17 20ZM17 21Q15.325 21 14.163 19.837Q13 18.675 13 17Q13 15.325 14.163 14.162Q15.325 13 17 13Q18.675 13 19.837 14.162Q21 15.325 21 17Q21 18.675 19.837 19.837Q18.675 21 17 21ZM12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Restricted Mode: Off
-                </div>
-      
-                <div class="spacer"></div>
-                <div class="user-dropdown-icon right-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
-                  </svg>
-                </div> 
-      
-              </div>
-              <div class="user-account-menu right-gt">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M11.99 1.98C6.46 1.98 1.98 6.47 1.98 12s4.48 10.02 10.01 10.02c5.54 0 10.03-4.49 10.03-10.02S17.53 1.98 11.99 1.98zM8.86 14.5c-.16-.82-.25-1.65-.25-2.5 0-.87.09-1.72.26-2.55h6.27c.17.83.26 1.68.26 2.55 0 .85-.09 1.68-.25 2.5H8.86zm6.03 1c-.54 1.89-1.52 3.64-2.89 5.15-1.37-1.5-2.35-3.25-2.89-5.15h5.78zM9.12 8.45c.54-1.87 1.52-3.61 2.88-5.1 1.36 1.49 2.34 3.22 2.88 5.1H9.12zm7.03 1h4.5c.24.81.37 1.66.37 2.55 0 .87-.13 1.71-.36 2.5h-4.51c.15-.82.24-1.65.24-2.5 0-.87-.09-1.72-.24-2.55zm4.14-1h-4.38c-.53-1.97-1.47-3.81-2.83-5.4 3.25.4 5.96 2.51 7.21 5.4zm-9.37-5.4c-1.35 1.59-2.3 3.43-2.83 5.4H3.71c1.24-2.9 3.96-5.01 7.21-5.4zm-7.57 6.4h4.5c-.15.83-.24 1.68-.24 2.55 0 .85.09 1.68.24 2.5H3.34c-.23-.79-.36-1.63-.36-2.5 0-.89.13-1.74.37-2.55zm.34 6.05h4.39c.52 1.99 1.48 3.85 2.84 5.45-3.27-.39-6-2.53-7.23-5.45zm9.4 5.45c1.36-1.6 2.32-3.46 2.84-5.45h4.39c-1.24 2.92-3.97 5.05-7.23 5.45z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Location: Germany
-                </div>
-      
-                <div class="spacer"></div>
-                <div class="user-dropdown-icon right-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
-                  </svg>
-                </div> 
-      
-              </div>
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M16 16H8v-2h8v2zm0-5h-2v2h2v-2zm3 0h-2v2h2v-2zm-6 0h-2v2h2v-2zm-3 0H8v2h2v-2zm-3 0H5v2h2v-2zm9-3h-2v2h2V8zm3 0h-2v2h2V8zm-6 0h-2v2h2V8zm-3 0H8v2h2V8zM7 8H5v2h2V8zm15-3v14H2V5h20zm-1 1H3v12h18V6z"></path>
-                  </svg>
-                </div>
-                <div class="user-dropdown-text">
-                  Keyboard shortcuts
-                </div>
               </div>
             </div>
-            <div class="user-account">
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path clip-rule="evenodd" d = "m14.302 6.457-.668-.278L12.87 3.5h-1.737l-.766 2.68-.668.277c-.482.2-.934.463-1.344.778l-.575.44-2.706-.677-.868 1.504 1.938 2.003-.093.716c-.033.255-.05.514-.05.779 0 .264.017.524.05.779l.093.716-1.938 2.003.868 1.504 2.706-.677.575.44c.41.315.862.577 1.344.778l.668.278.766 2.679h1.737l.765-2.68.668-.277c.483-.2.934-.463 1.345-.778l.574-.44 2.706.677.869-1.504-1.938-2.003.092-.716c.033-.255.05-.514.05-.779 0-.264-.017-.524-.05-.779l-.092-.716 1.938-2.003-.869-1.504-2.706.677-.574-.44c-.41-.315-.862-.577-1.345-.778Zm4.436.214Zm-3.86-1.6-.67-2.346c-.123-.429-.516-.725-.962-.725h-2.492c-.446 0-.838.296-.961.725l-.67 2.347c-.605.251-1.17.58-1.682.972l-2.37-.593c-.433-.108-.885.084-1.108.47L2.717 8.08c-.223.386-.163.874.147 1.195l1.698 1.755c-.04.318-.062.642-.062.971 0 .329.021.653.062.97l-1.698 1.756c-.31.32-.37.809-.147 1.195l1.246 2.158c.223.386.675.578 1.109.47l2.369-.593c.512.393 1.077.72 1.681.972l.67 2.347c.124.429.516.725.962.725h2.492c.446 0 .839-.296.961-.725l.67-2.347c.605-.251 1.17-.58 1.682-.972l2.37.593c.433.108.885-.084 1.109-.47l1.245-2.158c.223-.386.163-.874-.147-1.195l-1.698-1.755c.04-.318.062-.642.062-.971 0-.329-.021-.653-.062-.97l1.698-1.756c.31-.32.37-.809.147-1.195L20.038 5.92c-.224-.386-.676-.578-1.11-.47l-2.369.593c-.512-.393-1.077-.72-1.681-.972ZM15.5 12c0 1.933-1.567 3.5-3.5 3.5S8.5 13.933 8.5 12s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5ZM14 12c0 1.105-.895 2-2 2s-2-.895-2-2 .895-2 2-2 2 .895 2 2Z" fill-rule="evenodd"></path>
-                  </svg>
+            <div class="user-dropdown-container">
+              <div class="user-account">
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 24px 24px" focusable = "false" aria-hidden="true">
+                      <path d = "M12 13.9v-3.72h9.36c.14.63.25 1.22.25 2.05 0 5.71-3.83 9.77-9.6 9.77C6.48 22 2 17.52 2 12S6.48 2 12 2c2.7 0 4.96.99 6.69 2.61l-2.84 2.76c-.72-.68-1.97-1.49-3.85-1.49-3.31 0-6.01 2.75-6.01 6.12s2.7 6.12 6.01 6.12c3.83 0 5.24-2.65 5.5-4.22H12z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Google Account
+                  </div>
                 </div>
-                <div class="user-dropdown-text">
-                  Settings
+                <div class="user-account-menu right-gt">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M4 20h14v1H3V6h1v14zM6 3v15h15V3H6zm2.02 14c.36-2.13 1.93-4.1 5.48-4.1s5.12 1.97 5.48 4.1H8.02zM11 8.5a2.5 2.5 0 015 0 2.5 2.5 0 01-5 0zm3.21 3.43A3.507 3.507 0 0017 8.5C17 6.57 15.43 5 13.5 5S10 6.57 10 8.5c0 1.69 1.2 3.1 2.79 3.43-3.48.26-5.4 2.42-5.78 5.07H7V4h13v13h-.01c-.38-2.65-2.31-4.81-5.78-5.07z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Switch account
+                  </div>
+                  <div class="spacer"></div>
+                  <div class="user-dropdown-icon right-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M20 3v18H8v-1h11V4H8V3h12zm-8.9 12.1.7.7 4.4-4.4L11.8 7l-.7.7 3.1 3.1H3v1h11.3l-3.2 3.3z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Sign out
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="user-account">
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M15.36 9.96c0 1.09-.67 1.67-1.31 2.24-.53.47-1.03.9-1.16 1.6l-.04.2H11.1l.03-.28c.14-1.17.8-1.76 1.47-2.27.52-.4 1.01-.77 1.01-1.49 0-.51-.23-.97-.63-1.29-.4-.31-.92-.42-1.42-.29-.59.15-1.05.67-1.19 1.34l-.05.28H8.57l.06-.42c.2-1.4 1.15-2.53 2.42-2.87 1.05-.29 2.14-.08 2.98.57.85.64 1.33 1.62 1.33 2.68zM12 18c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0-15c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path>
-                  </svg>
+              <div class="user-account">
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M10 9.35 15 12l-5 2.65ZM12 3a.73.73 0 00-.31.06L4.3 7.28a.79.79 0 00-.3.52v8.4a.79.79 0 00.3.52l7.39 4.22a.83.83 0 00.62 0l7.39-4.22a.79.79 0 00.3-.52V7.8a.79.79 0 00-.3-.52l-7.39-4.22A.73.73 0 0012 3m0-1a1.6 1.6 0 01.8.19l7.4 4.22A1.77 1.77 0 0121 7.8v8.4a1.77 1.77 0 01-.8 1.39l-7.4 4.22a1.78 1.78 0 01-1.6 0l-7.4-4.22A1.77 1.77 0 013 16.2V7.8a1.77 1.77 0 01.8-1.39l7.4-4.22A1.6 1.6 0 0112 2Zm0 4a.42.42 0 00-.17 0l-4.7 2.8a.59.59 0 00-.13.39v5.61a.65.65 0 00.13.37l4.7 2.8A.42.42 0 0012 18a.34.34 0 00.17 0l4.7-2.81a.56.56 0 00.13-.39V9.19a.62.62 0 00-.13-.37L12.17 6A.34.34 0 0012 6m0-1a1.44 1.44 0 01.69.17L17.39 8A1.46 1.46 0 0118 9.19v5.61a1.46 1.46 0 01-.61 1.2l-4.7 2.81A1.44 1.44 0 0112 19a1.4 1.4 0 01-.68-.17L6.62 16A1.47 1.47 0 016 14.8V9.19A1.47 1.47 0 016.62 8l4.7-2.8A1.4 1.4 0 0112 5Z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    YouTube Studio
+                  </div>
                 </div>
-                <div class="user-dropdown-text">
-                  Help
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M12 3c4.96 0 9 4.04 9 9s-4.04 9-9 9-9-4.04-9-9 4.04-9 9-9m0-1C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4 7V7h-3V5h-2v2h-1c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h4v2H8v2h3v2h2v-2h1c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2h-4V9h6z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Purchase and memberships
+                  </div>
                 </div>
               </div>
-              <div class="user-account-menu">
-                <div class="user-dropdown-icon">
-                  <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
-                    <path d = "M13 14h-2v-2h2v2zm0-9h-2v6h2V5zm6-2H5v16.59l3.29-3.29.3-.3H19V3m1-1v15H9l-5 5V2h16z"></path>
-                  </svg>
+              <div class="user-account">
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "m12 3.06 7 3.21v4.84c0 1.3-.25 2.6-.75 3.86-.15.37-.33.76-.55 1.17-.15.27-.31.54-.48.81-1.32 2.01-3.17 3.42-5.23 3.98-2.06-.56-3.91-1.97-5.23-3.98-.17-.27-.33-.54-.48-.81-.22-.41-.4-.79-.55-1.17-.48-1.26-.73-2.56-.73-3.86V6.27l7-3.21m0-1.1L4 5.63v5.49c0 1.47.3 2.9.81 4.22.17.44.37.86.6 1.28.16.3.34.6.52.88 1.42 2.17 3.52 3.82 5.95 4.44l.12.02.12-.03c2.43-.61 4.53-2.26 5.95-4.43.19-.29.36-.58.52-.88.22-.41.43-.84.6-1.28.51-1.33.81-2.76.81-4.23V5.63l-8-3.67zm1.08 10.15c-.32-.06-.64-.11-.96-.12A2.997 2.997 0 0012 6a2.996 2.996 0 00-.12 5.99c-.32.01-.64.06-.96.12C8.64 12.58 7 14.62 7 17h10c0-2.38-1.64-4.42-3.92-4.89zM10 9c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm1.12 4.09c.37-.08.64-.11.88-.11s.51.03.88.11c1.48.3 2.63 1.46 3 2.91H8.12c.37-1.45 1.52-2.61 3-2.91z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Your data in YouTube
+                  </div>
                 </div>
-                <div class="user-dropdown-text">
-                  Send feedback
+                <div class="user-account-menu right-gt">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M12 22C10.93 22 9.86998 21.83 8.83998 21.48L7.41998 21.01L8.83998 20.54C12.53 19.31 15 15.88 15 12C15 8.12 12.53 4.69 8.83998 3.47L7.41998 2.99L8.83998 2.52C9.86998 2.17 10.93 2 12 2C17.51 2 22 6.49 22 12C22 17.51 17.51 22 12 22ZM10.58 20.89C11.05 20.96 11.53 21 12 21C16.96 21 21 16.96 21 12C21 7.04 16.96 3 12 3C11.53 3 11.05 3.04 10.58 3.11C13.88 4.81 16 8.21 16 12C16 15.79 13.88 19.19 10.58 20.89Z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Appearance: Light
+                  </div>
+                  
+                  <div class="spacer"></div>
+                  <div class="user-dropdown-icon right-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
+                    </svg>
+                  </div> 
+        
+                </div>
+                <div class="user-account-menu right-gt">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M13.33 6c-1 2.42-2.22 4.65-3.57 6.52l2.98 2.94-.7.71-2.88-2.84c-.53.67-1.06 1.28-1.61 1.83l-3.19 3.19-.71-.71 3.19-3.19c.55-.55 1.08-1.16 1.6-1.83l-.16-.15c-1.11-1.09-1.97-2.44-2.49-3.9l.94-.34c.47 1.32 1.25 2.54 2.25 3.53l.05.05c1.2-1.68 2.29-3.66 3.2-5.81H2V5h6V3h1v2h7v1h-2.67zM22 21h-1l-1.49-4h-5.02L13 21h-1l4-11h2l4 11zm-2.86-5-1.86-5h-.56l-1.86 5h4.28z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Language: British English
+                  </div>
+        
+                  <div class="spacer"></div>
+                  <div class="user-dropdown-icon right-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
+                    </svg>
+                  </div> 
+        
+                </div>
+                <div class="user-account-menu right-gt">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M12 20.95Q8.975 20.075 6.987 17.312Q5 14.55 5 11.1V5.7L12 3.075L19 5.7V11.35Q18.775 11.275 18.5 11.2Q18.225 11.125 18 11.075V6.375L12 4.15L6 6.375V11.1Q6 12.575 6.438 13.938Q6.875 15.3 7.625 16.438Q8.375 17.575 9.413 18.425Q10.45 19.275 11.625 19.725L11.675 19.7Q11.8 20 11.975 20.288Q12.15 20.575 12.375 20.825Q12.275 20.85 12.188 20.888Q12.1 20.925 12 20.95ZM17 17Q17.625 17 18.062 16.562Q18.5 16.125 18.5 15.5Q18.5 14.875 18.062 14.438Q17.625 14 17 14Q16.375 14 15.938 14.438Q15.5 14.875 15.5 15.5Q15.5 16.125 15.938 16.562Q16.375 17 17 17ZM17 20Q17.8 20 18.438 19.65Q19.075 19.3 19.5 18.7Q18.925 18.35 18.3 18.175Q17.675 18 17 18Q16.325 18 15.7 18.175Q15.075 18.35 14.5 18.7Q14.925 19.3 15.562 19.65Q16.2 20 17 20ZM17 21Q15.325 21 14.163 19.837Q13 18.675 13 17Q13 15.325 14.163 14.162Q15.325 13 17 13Q18.675 13 19.837 14.162Q21 15.325 21 17Q21 18.675 19.837 19.837Q18.675 21 17 21ZM12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Restricted Mode: Off
+                  </div>
+        
+                  <div class="spacer"></div>
+                  <div class="user-dropdown-icon right-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
+                    </svg>
+                  </div> 
+        
+                </div>
+                <div class="user-account-menu right-gt">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M11.99 1.98C6.46 1.98 1.98 6.47 1.98 12s4.48 10.02 10.01 10.02c5.54 0 10.03-4.49 10.03-10.02S17.53 1.98 11.99 1.98zM8.86 14.5c-.16-.82-.25-1.65-.25-2.5 0-.87.09-1.72.26-2.55h6.27c.17.83.26 1.68.26 2.55 0 .85-.09 1.68-.25 2.5H8.86zm6.03 1c-.54 1.89-1.52 3.64-2.89 5.15-1.37-1.5-2.35-3.25-2.89-5.15h5.78zM9.12 8.45c.54-1.87 1.52-3.61 2.88-5.1 1.36 1.49 2.34 3.22 2.88 5.1H9.12zm7.03 1h4.5c.24.81.37 1.66.37 2.55 0 .87-.13 1.71-.36 2.5h-4.51c.15-.82.24-1.65.24-2.5 0-.87-.09-1.72-.24-2.55zm4.14-1h-4.38c-.53-1.97-1.47-3.81-2.83-5.4 3.25.4 5.96 2.51 7.21 5.4zm-9.37-5.4c-1.35 1.59-2.3 3.43-2.83 5.4H3.71c1.24-2.9 3.96-5.01 7.21-5.4zm-7.57 6.4h4.5c-.15.83-.24 1.68-.24 2.55 0 .85.09 1.68.24 2.5H3.34c-.23-.79-.36-1.63-.36-2.5 0-.89.13-1.74.37-2.55zm.34 6.05h4.39c.52 1.99 1.48 3.85 2.84 5.45-3.27-.39-6-2.53-7.23-5.45zm9.4 5.45c1.36-1.6 2.32-3.46 2.84-5.45h4.39c-1.24 2.92-3.97 5.05-7.23 5.45z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Location: Germany
+                  </div>
+        
+                  <div class="spacer"></div>
+                  <div class="user-dropdown-icon right-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
+                    </svg>
+                  </div> 
+        
+                </div>
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M16 16H8v-2h8v2zm0-5h-2v2h2v-2zm3 0h-2v2h2v-2zm-6 0h-2v2h2v-2zm-3 0H8v2h2v-2zm-3 0H5v2h2v-2zm9-3h-2v2h2V8zm3 0h-2v2h2V8zm-6 0h-2v2h2V8zm-3 0H8v2h2V8zM7 8H5v2h2V8zm15-3v14H2V5h20zm-1 1H3v12h18V6z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Keyboard shortcuts
+                  </div>
+                </div>
+              </div>
+              <div class="user-account">
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path clip-rule="evenodd" d = "m14.302 6.457-.668-.278L12.87 3.5h-1.737l-.766 2.68-.668.277c-.482.2-.934.463-1.344.778l-.575.44-2.706-.677-.868 1.504 1.938 2.003-.093.716c-.033.255-.05.514-.05.779 0 .264.017.524.05.779l.093.716-1.938 2.003.868 1.504 2.706-.677.575.44c.41.315.862.577 1.344.778l.668.278.766 2.679h1.737l.765-2.68.668-.277c.483-.2.934-.463 1.345-.778l.574-.44 2.706.677.869-1.504-1.938-2.003.092-.716c.033-.255.05-.514.05-.779 0-.264-.017-.524-.05-.779l-.092-.716 1.938-2.003-.869-1.504-2.706.677-.574-.44c-.41-.315-.862-.577-1.345-.778Zm4.436.214Zm-3.86-1.6-.67-2.346c-.123-.429-.516-.725-.962-.725h-2.492c-.446 0-.838.296-.961.725l-.67 2.347c-.605.251-1.17.58-1.682.972l-2.37-.593c-.433-.108-.885.084-1.108.47L2.717 8.08c-.223.386-.163.874.147 1.195l1.698 1.755c-.04.318-.062.642-.062.971 0 .329.021.653.062.97l-1.698 1.756c-.31.32-.37.809-.147 1.195l1.246 2.158c.223.386.675.578 1.109.47l2.369-.593c.512.393 1.077.72 1.681.972l.67 2.347c.124.429.516.725.962.725h2.492c.446 0 .839-.296.961-.725l.67-2.347c.605-.251 1.17-.58 1.682-.972l2.37.593c.433.108.885-.084 1.109-.47l1.245-2.158c.223-.386.163-.874-.147-1.195l-1.698-1.755c.04-.318.062-.642.062-.971 0-.329-.021-.653-.062-.97l1.698-1.756c.31-.32.37-.809.147-1.195L20.038 5.92c-.224-.386-.676-.578-1.11-.47l-2.369.593c-.512-.393-1.077-.72-1.681-.972ZM15.5 12c0 1.933-1.567 3.5-3.5 3.5S8.5 13.933 8.5 12s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5ZM14 12c0 1.105-.895 2-2 2s-2-.895-2-2 .895-2 2-2 2 .895 2 2Z" fill-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Settings
+                  </div>
+                </div>
+              </div>
+              <div class="user-account">
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M15.36 9.96c0 1.09-.67 1.67-1.31 2.24-.53.47-1.03.9-1.16 1.6l-.04.2H11.1l.03-.28c.14-1.17.8-1.76 1.47-2.27.52-.4 1.01-.77 1.01-1.49 0-.51-.23-.97-.63-1.29-.4-.31-.92-.42-1.42-.29-.59.15-1.05.67-1.19 1.34l-.05.28H8.57l.06-.42c.2-1.4 1.15-2.53 2.42-2.87 1.05-.29 2.14-.08 2.98.57.85.64 1.33 1.62 1.33 2.68zM12 18c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0-15c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Help
+                  </div>
+                </div>
+                <div class="user-account-menu">
+                  <div class="user-dropdown-icon">
+                    <svg class="svg-icons" xmlns = "http://www.w3.org/2000/svg" enable-background = "new 0 0 24px 24px" height = "24px" viewBox = "0 0 24px 24px" width="24px" focusable = "false" aria-hidden="true">
+                      <path d = "M13 14h-2v-2h2v2zm0-9h-2v6h2V5zm6-2H5v16.59l3.29-3.29.3-.3H19V3m1-1v15H9l-5 5V2h16z"></path>
+                    </svg>
+                  </div>
+                  <div class="user-dropdown-text">
+                    Send feedback
+                  </div>
                 </div>
               </div>
             </div>
@@ -361,9 +364,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="sidebar">
+  <nav>
+    <div class="sidebar">
     <div class="sidebar-link">
       <a class="home" href="#">
         <div class="upload-side-icons">
@@ -416,7 +420,7 @@
             </svg>
           </div>
         </button>
-        <div class="youtube-logo-containor">
+        <div class="youtube-logo-container">
           <img class="youtube-logo" src="icons/youtube-logo.svg">
           <span>DE</span>
         </div>
@@ -732,9 +736,9 @@
       </div>
     </div>
 
-  </div>
+    </div>
 
-  <div class="scrolling-bar-container">
+    <div class="scrolling-bar-container">
     <div class="left-container">
       <div class="left-scroll">
         <button class="left-scroll-button">
@@ -774,7 +778,8 @@
         </button>
       </div>
     </div>
-  </div>
+    </div>
+  </nav> 
 
   <main>
     <div class="video-grid">
@@ -1081,6 +1086,7 @@
     </div>
   </main>
 
+  <!-- JavaScript files-->
   <script src="/script/header.js"></script>
   <script src="/script/under.js"></script>
   <script src="/script/sidebar.js"></script>

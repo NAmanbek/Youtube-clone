@@ -1,3 +1,7 @@
+/* Header */
+
+/* Left Section */
+
 .header {
   height: 56px;
   display: flex;
@@ -15,7 +19,7 @@
   background-color: white;
 }
 
-.left-section-containor {
+.left-section-container {
   min-width: 169px;
   display: flex;
   height: 58.5px;
@@ -61,17 +65,19 @@
   cursor: pointer;
 }
 
-.youtube-logo-containor {
+.youtube-logo-container {
   display: flex;
   flex-direction: row;
 }
 
-.youtube-logo-containor span {
+.youtube-logo-container span {
   margin: 12px 0 0 -10px;
   font-family: Roboto, Arial;
   font-size: 10px;
   color: rgba(0, 0, 0, 0.7);
 }
+
+/* Middle Section */
 
 .middle-section {
   flex: 0 1 732px;
@@ -83,7 +89,9 @@
   justify-content: space-between;
 }
 
-.search-containor {
+/* Search Input Element */
+
+.search-container {
   display: flex;
   min-width: 0;
   height: 40px;
@@ -92,7 +100,7 @@
   flex: 1;
 }
 
-.search-bar-containor {
+.search-bar-container {
   position: relative;
   height: 40px;
   display: flex;
@@ -152,6 +160,8 @@
   line-height: 24px; 
 }
 
+/* Search Button Element */
+
 .search-button {
   height: 40px;
   width: 64px;
@@ -168,13 +178,17 @@
   background-color: rgba(128, 128, 128, 0.2);
 }
 
+/* Video Search Button Element */
+
+/* Hidden Buttons */
+
 .hidden-buttons {
   display: none;
 }
 
 @media (max-width: 657px) {
-  .search-containor,
-  .video-searh-button-containor {
+  .search-container,
+  .video-searh-button-container {
     display: none;
   }
 
@@ -296,10 +310,12 @@
   height: 24px;
 }
 
-.video-searh-button-containor {
+.video-searh-button-container {
   margin-left: 12px;
   position: static;
 }
+
+/* Voice Search Button Element */
 
 #voice-search-button {
   height: 40px;
@@ -320,6 +336,8 @@
 .voice-search-icon{
   height: 24px;
 }
+
+/* Right Section */
 
 .right-section {
   display: flex;
@@ -359,6 +377,8 @@
   background-color: rgba(128, 128, 128, 0.2);
 }
 
+/* Video Upload Dropdown Content */
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -394,6 +414,8 @@
 .dropdown-content a:hover {
   background-color: rgba(128, 128, 128, 0.2);
 }
+
+/* SVG Icons */
 
 .upload-icons,
 .user-dropdown-icon,
@@ -449,6 +471,8 @@
   cursor: pointer;
   border-radius: 20px;
 }
+
+/* Notification Dropdown Content */
 
 .dropdown-notification-content {
   position: fixed;
@@ -696,6 +720,8 @@
 #hamburger-button.released::after {
   animation: borderFade 0.5s ease; /* Adjust duration as needed */
 }
+
+/* User Dropdown Content */
 
 .user-dropdown-main-container{
   display: none;
