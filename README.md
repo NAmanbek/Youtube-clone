@@ -30,7 +30,7 @@ Check out the live version of this project on GitHub Pages: [YouTube Clone](http
    ```bash
    cd Youtube-clone
    ```
-3. **Open `index.html`** in your browser to view the project locally.
+3. **View the Project:** Visit [YouTube Clone](https://namanbek.github.io/Youtube-clone/) to see the project live.
 
 ## Usage
 
