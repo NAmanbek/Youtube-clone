@@ -1,0 +1,16 @@
+.left-menu-container {
+  display: flex;
+  width: 240px;
+  height: 56px;
+  box-sizing: border-box;
+  padding-left: 0 16px 0 0;
+  flex: 1;
+}
+
+.left-side-section{
+  width: 240px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
