@@ -102,6 +102,8 @@ overlay.addEventListener('click', function() {
   document.querySelector('.scrolling-bar').style.marginRight = '';
 });
 
+
+
 // Handle visibility and layout on resize
 window.addEventListener('resize', handleResize);
 handleResize(); // Initialize on page load

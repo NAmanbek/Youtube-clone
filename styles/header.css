@@ -214,10 +214,6 @@
     flex-shrink: 1;
   }
 
-  .hamburger-menu{
-    margin-left: 10px;
-  }
-
   .hidden-buttons {
     display: flex;
     align-items: center;

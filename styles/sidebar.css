@@ -33,9 +33,12 @@
   background-color: rgb(235, 235,235);
 }
 
-.sidebar-link .upload-side-icons {
+.upload-side-icons {
   height: 24px;
   margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar-text {
@@ -85,6 +88,10 @@
    .left-container {
     left: 0 !important;
    }
+
+   .scrolling-bar {
+    margin-right: 0 !important;
+   } 
 }
 
 .left-menu-container {
@@ -92,7 +99,7 @@
   box-sizing: border-box;
   display: block;
   position: absolute;
-  top: -55px;
+  top: 0;
   left: 1px;
   bottom: 0;
   background-color: rgba(255,255,255, 1);
@@ -103,6 +110,7 @@
 
 .left-menu-container.show {
   transform: translateX(0);
+  display: block;
 }
 
 .overlay {
